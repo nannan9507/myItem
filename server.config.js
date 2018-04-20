@@ -1,7 +1,8 @@
+const constants = require('./dev-constant')
+
 module.exports = {
   appPort: 9000,
-  webpackDevServerPort: 9003,
   proxy: {
-    '/api': 'http://localhost:4005',
+    '/api': constants.mossTargets.server,
   },
 }
