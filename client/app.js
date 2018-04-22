@@ -5,6 +5,7 @@ import {
   addResponseInterceptor
 } from 'summerd-sdk/client/http'
 
+// http请求
 addRequestInterceptor(request => {
   return request
 })
@@ -15,6 +16,6 @@ addResponseInterceptor(response => {
 
 const axios = createAxios({})
 
-axios.get('/api/aaa/bbb')
-
 Vue.prototype.http = axios
+
+console.log(Vue)
