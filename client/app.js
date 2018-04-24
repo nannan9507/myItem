@@ -1,21 +1,15 @@
 import Vue from 'vue'
-import {
-  createAxios,
-  addRequestInterceptor,
-  addResponseInterceptor
-} from 'summerd-sdk/client/http'
+import { createRouter } from './router'
+import App from './App.vue'
+import './config'
 
-// http请求
-addRequestInterceptor(request => {
-  return request
-})
+export function createApp() {
+  const router = createRouter()
 
-addResponseInterceptor(response => {
-  return response
-})
+  const app = new Vue({
+    router,
+    render: h => h(App)
+  })
 
-const axios = createAxios({})
-
-Vue.prototype.http = axios
-
-console.log(Vue)
+  return { app, router }
+}

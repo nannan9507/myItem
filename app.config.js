@@ -8,7 +8,7 @@ module.exports = {
   // webpack的差异化配置
   webpack: {
     entry: {
-      app: path.join(__dirname, 'client/index.js'),
+      app: path.join(__dirname, 'client/entry-client.js'),
     },
   },
 }

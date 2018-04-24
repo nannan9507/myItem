@@ -9,7 +9,11 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
-    "summerd-sdk": "^1.0.37",
+    "happypack": "5.0.0-beta.3",
+    "summerd-sdk": "^1.0.41",
+    "vue-loader": "^14.2.2",
+    "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.5.16",
     "webpack-module-hot-accept": "^1.0.5"
   },
   "scripts": {
