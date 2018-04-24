@@ -1,0 +1,1 @@
+module.exports = require('summerd-sdk/config/eslintrc.conf')

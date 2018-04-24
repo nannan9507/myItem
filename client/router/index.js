@@ -6,12 +6,11 @@ import routes from './routes'
 Vue.use(Router)
 
 // route-level code splitting
-
-export function createRouter () {
+export function createRouter() {
   return new Router({
     mode: 'history',
     fallback: false,
     scrollBehavior: () => ({ y: 0 }),
-    routes: routes,
+    routes,
   })
 }

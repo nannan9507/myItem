@@ -2,7 +2,7 @@ import Vue from 'vue'
 import {
   createAxios,
   addRequestInterceptor,
-  addResponseInterceptor
+  addResponseInterceptor,
 } from 'summerd-sdk/client/http'
 
 // http请求拦截器
