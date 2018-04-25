@@ -6,3 +6,10 @@
 export default {
 }
 </script>
+
+<style lang="stylus" scoped>
+div {
+  color: blue
+}
+</style>
+

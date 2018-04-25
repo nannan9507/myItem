@@ -20,3 +20,7 @@ npm start
 .babelrc babel配置
 
 app.config.js
+
+### 未完成事项
+
+目前css extract 要换成minixxx什么什么的，还没有在生产环境webpack中配置生成,
