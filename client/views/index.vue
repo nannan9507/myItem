@@ -4,11 +4,15 @@
 
 <script>
 export default {
+  mounted() {
+    console.log(12)
+  },
 }
 </script>
 
 <style lang="stylus" scoped>
 div {
+  display flex
   color: blue
 }
 </style>

@@ -1,8 +1,8 @@
 // const { IS_MOBILE } = require('./serve/build/env.config')
 
-// let plugins = [
-//   require('autoprefixer'),
-// ]
+let plugins = [
+  require('autoprefixer'),
+]
 
 // if (IS_MOBILE) {
 //   plugins.push(
@@ -18,6 +18,6 @@
 //   )
 // }
 
-// module.exports = {
-//   plugins,
-// }
+module.exports = {
+  plugins,
+}

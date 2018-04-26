@@ -10,5 +10,14 @@ module.exports = {
     entry: {
       app: path.join(__dirname, 'client/entry-client.js'),
     },
+    rules: [
+      {
+        test: /\.css$/,
+        loaders: ['vue-style-loader', 'css-loader'],
+        include: [
+          path.resolve('node_modules/element-ui/lib/theme-chalk'),
+        ],
+      },
+    ],
   },
 }

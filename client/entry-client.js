@@ -1,4 +1,6 @@
+import { IS_PROD } from 'summerd-sdk/config/env.config'
 import { createApp } from './app'
+
 // eslint-disable-next-line
 module.hot && module.hot.accept()
 
@@ -9,7 +11,7 @@ router.onReady(() => {
 })
 
 // service worker
-if ('serviceWorker' in navigator) {
+if (IS_PROD && 'serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/service-worker.js').then(registration => {
       // eslint-disable-next-line
