@@ -15,4 +15,4 @@ const menus = [
   },
 ]
 
-export export menus
+export default menus
